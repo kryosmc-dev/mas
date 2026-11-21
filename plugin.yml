@@ -1,0 +1,19 @@
+name: KryosMascotas
+version: 1.0.0
+main: com.kryos.mascotas.KryosMascotas
+api-version: '1.21'
+author: Kryos
+description: Mascotas pequeñas que se compran, luchan a tu lado, suben de nivel, se montan y se usan de sombrero.
+softdepend: [Vault]
+commands:
+  mascota:
+    description: Abre el menú de mascotas
+    aliases: [mascotas, pet, pets]
+    usage: /mascota [invocar|ver|niveles|acciones|cosmeticos|montar|sombrero|bebe|acariciar|bailar|llamar|quedarse|descansar|guardar|admin]
+permissions:
+  kryosmascotas.use:
+    description: Usar el sistema de mascotas
+    default: true
+  kryosmascotas.admin:
+    description: Comandos de administración de mascotas
+    default: op
